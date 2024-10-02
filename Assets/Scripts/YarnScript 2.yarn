@@ -1,0 +1,98 @@
+﻿title: Start
+position: 11,-310
+---
+You come into consciousness inside your stasis pod onboard your spaceship. You are FakER, a combat android.
+HUD: Good Morning, FakER. Your new assignment is to rescue a group of scientists stranded on their space station, which has been overrun by failed test subjects.
+A few minutes later there is a grinding and creaking of metal as you ship docks with the scientists space station.
+You gain control of your body as your pod opens and you step out into the hangar.
+Docked in the hangar are a small number of escape ships but there is no-one to be found.
+HUD: Alright they should be expecting us, I'll point the way. Watch out for hostiles.
+-> Let's Go
+    <<jump Corridor1a>>
+===
+
+title: Corridor1a
+position: 4,-125
+---
+Skating through the corridors of the space station with your jet boots, you make it a decent way through your journey but your HUD alerts you of a nearby enemy.
+Turning the corner you see a giant mutated scorpion with long legs and three stingers.
+-> Fight
+    Using your laser sword you make quick work of the scorpion
+    HUD: Good work, minor damage sustained.
+    <<jump AtriumA>>
+-> Run Past
+    Using you superior movement you slip past the scorpion
+    <<jump AtriumB>>
+===
+
+title: AtriumA
+position: -36,124
+---
+You enter a large room with multiple smaller rooms attached.
+HUD: The scientists are nearby. There, where that mutant is.
+The HUD highlights a giant mutated hound that is clawing at a metal door.
+It notices you and moves to attack.
+-> Fight
+    Using your laser sword you make quick work of the hound
+    HUD: Good work, moderate damage sustained.
+    <<jump ScienceB>>
+-> Lead Away
+    Using your superior movement you atempt to lead the hound away, but its mutated speed is to much to keep ahead of.
+    HUD: Ouch, major damage sustained.
+    <<jump ScienceC>>
+===
+
+title: AtriumB
+position: 459,77
+---
+You enter a large room with multiple smaller rooms attached.
+HUD: The scientists are nearby. There, where that mutant is.
+The HUD highlights a giant mutated hound that is clawing at a metal door.
+It notices you and moves to attack.
+-> Fight
+    Using your laser sword you make quick work of the hound
+    HUD: Good work, moderate damage sustained.
+    <<jump ScienceB>>
+-> Lead Away
+    Using your superior movement you atempt to lead the hound away, but its mutated speed is to much to keep ahead of.
+    HUD: Ouch, moderate damage sustained.
+    <<jump ScienceB>>
+===
+
+title: ScienceB
+position: 338,517
+---
+returning the highlighted door the scientists open it from the other side.
+Scientist: Thank you for saving us, before you lead us back would you like to use the repair station?
+HUD: You have sustained Moderate damage
+->Repair 
+    HUD: All damage repaired.
+    You lead the scientists back the way you came.
+    <<jump CorridorAlt1>>
+->No Thanks
+    You lead the scientists back the way you came.
+    <<jump CorridorAlt1>>
+===
+
+title: ScienceC
+position: -183,545
+---
+returning the highlighted door the scientists open it from the other side.
+Scientist: Thank you for saving us, before you lead us back would you like to use the repair station?
+HUD: You have sustained Major damage
+->Repair 
+    HUD: All damage repaired.
+    You lead the scientists back the way you came.
+    <<jump CorridorAlt1>>
+->No Thanks
+    You lead the scientists back the way you came.
+    <<jump CorridorAlt1>>
+===
+
+title: CorridorAlt1
+position: 151,973
+---
+You lead the scientists to the escape ships, and successfully escape.
+HUD: Well done, FakER.
+===
+
